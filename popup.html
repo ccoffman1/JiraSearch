@@ -33,13 +33,15 @@
 <body>
     <h1>Jira Search!</h1>
     <div>
-        <select id="dropdown">
-            <option value="hasId" id="hasId" >Jira ID</option>
-            <option value="dropSearch" id="dropSearch" selected="selected">Text Search</option>  <!--SF searching set first-->
-        </select>
-        <span>Search Term:</span>
-        <input type="text" id="textSearch" />
-        <button id="jiraID"> Go! </button>
+        <form>
+            <select id="dropdown">
+                <option value="hasId" id="hasId" >Jira ID</option>
+                <option value="dropSearch" id="dropSearch" selected="selected">Text Search</option>  <!--SF searching set first-->
+            </select>
+            <span>Search Term:</span>
+            <input type="text" id="textSearch" />
+            <button id="jiraID" >Go! </button>
+        </form>
     </div>
 </body>
 </html>
