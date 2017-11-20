@@ -1,0 +1,45 @@
+﻿<!doctype html>
+
+<html>
+<head>
+    <title>Jira Search</title>
+    <style type="text/css">
+        body {
+            margin: 10px;
+            white-space: nowrap;
+        }
+
+        h1 {
+            font-size: 15px;
+        }
+
+        #container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="popup.js"></script>
+</head>
+
+
+<body>
+    <h1>Click button</h1>
+    <div>
+        <select id="dropdown">
+            <option value="hasId" id="hasId" >Jira ID</option>
+            <option value="dropSearch" id="dropSearch" selected="selected">Text Search</option>  <!--SF searching first-->
+        </select>
+        <span>enter term</span>
+        <input type="text" id="textSearch" />
+        <button id="jiraID"> Go! </button>
+    </div>
+</body>
+</html>
