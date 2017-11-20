@@ -3,7 +3,7 @@
   "manifest_version": 2,
 
   "name": "Jira Search",
-  "description": "This extension allows the user to change the background color of the current page.",
+  "description": "This extension allows the user to search Jira by a ticket number or run a standard text search.",
   "version": "1.0",
 
   "browser_action": {
