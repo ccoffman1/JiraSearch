@@ -1,5 +1,4 @@
 ﻿<!doctype html>
-
 <html>
 <head>
     <title>Jira Search</title>
@@ -19,28 +18,37 @@
             justify-content: space-between;
         }
     </style>
-
     <!--
       - JavaScript and HTML must be in separate files: see our Content Security
       - Policy documentation[1] for details and explanation.
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
     -->
-    <script src="popup.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
 </head>
-
-
 <body>
     <h1>Jira Search!</h1>
+
+
+
+    <div>
+        <form>
+            <h1>Type in your company's name in Jira</h1>
+            <input type="text" id="company" value="" />
+        </form>
+    </div>
+
+
+
     <div>
         <form>
             <select id="dropdown">
-                <option value="hasId" id="hasId" >Jira ID</option>
+                <option value="hasId" id="hasId">Jira ID</option>
                 <option value="dropSearch" id="dropSearch" selected="selected">Text Search</option>  <!--SF searching set first-->
             </select>
             <span>Search Term:</span>
             <input type="text" id="textSearch" />
-            <button id="jiraID" >Go! </button>
+            <button id="jiraID">Go! </button>
         </form>
     </div>
 </body>
